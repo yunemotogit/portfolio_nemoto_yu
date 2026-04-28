@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>number place</h1>
+            <p>難易度: <span id="difficulty-display">-</span></p>
+        </header>
+
+        <main>
+            <div id="timer" class="timer">00:00</div>
+            <div id="sudoku-grid" class="grid">
+                <!-- JSでセルを生成 -->
+            </div>
+
+            <div class="controls">
+                <button id="difficulty-beginner" class="primary-btn">初級</button>
+                <button id="difficulty-intermediate" class="primary-btn">中級</button>
+                <button id="difficulty-advanced" class="primary-btn">上級</button>
+                <button id="show-solution-btn" class="secondary-btn">正解を表示</button>
+                <button id="verify-btn" class="secondary-btn">回答</button>
+            </div>
+
+            <div id="status-message" class="status"></div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
